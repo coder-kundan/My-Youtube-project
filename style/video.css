@@ -45,19 +45,25 @@
     row-gap: 40px;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 300px) {
+    .div-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width: 301px) and (max-width:750px){
     .div-grid {
       grid-template-columns: 1fr 1fr;
     }
   }
   
-  @media (min-width: 751px) and (max-width: 999px) {
+  @media (min-width: 751px) and (max-width: 1300px) {
     .div-grid {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
   
-  @media (min-width: 1000px) {
+  @media (min-width: 1300px) {
     .div-grid {
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
